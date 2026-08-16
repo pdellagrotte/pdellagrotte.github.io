@@ -1,312 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Paul DellaGrotte — enterprise analytics and technology leader focused on AI transformation, analytics modernization, data platforms and intelligent automation.">
+  <meta name="author" content="Paul DellaGrotte">
+  <meta property="og:title" content="Paul DellaGrotte | AI Transformation & Analytics Modernization">
+  <meta property="og:description" content="Helping organizations move from traditional analytics and BI toward AI-enabled ways of working.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pdellagrotte.github.io/">
+  <meta property="og:image" content="https://pdellagrotte.github.io/img/profile.jpg">
+  <meta name="theme-color" content="#08111f">
+  <title>Paul DellaGrotte | AI Transformation & Analytics Modernization</title>
+  <style>
+    :root{--bg:#07111f;--panel:#0d1a2b;--panel2:#112239;--text:#f4f7fb;--muted:#a9b7ca;--line:#21344d;--accent:#6ee7f2;--accent2:#8da2ff;--max:1180px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 80% 0,#122644 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6} a{color:inherit} .wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)} .navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:-.02em;text-decoration:none}.brand span{color:var(--accent)} .links{display:flex;gap:22px;align-items:center}.links a{font-size:.92rem;color:var(--muted);text-decoration:none}.links a:hover{color:#fff}.pill{padding:10px 15px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03)}
+    .hero{padding:92px 0 68px}.hero-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:72px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;font-weight:800;color:var(--accent)}h1{font-size:clamp(3.2rem,7vw,6.8rem);line-height:.94;letter-spacing:-.06em;margin:18px 0 26px;max-width:980px}.grad{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent}.lead{font-size:clamp(1.1rem,2vw,1.4rem);color:#c7d2e0;max-width:780px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;padding:13px 18px;border-radius:12px;font-weight:750}.primary{background:linear-gradient(105deg,var(--accent),#b4f7ff);color:#04111d}.secondary{border:1px solid var(--line);background:#0b1829;color:#fff}.portrait{position:relative}.portrait:before{content:"";position:absolute;inset:-12px;border:1px solid rgba(110,231,242,.25);border-radius:32px;transform:rotate(4deg)}.portrait img{position:relative;width:100%;aspect-ratio:1/1.08;object-fit:cover;border-radius:26px;border:1px solid rgba(255,255,255,.1);box-shadow:0 30px 80px rgba(0,0,0,.35)}.availability{position:absolute;bottom:18px;left:-22px;background:#0b1829;border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:.86rem;color:#dce5ef}.dot{display:inline-block;width:8px;height:8px;background:#66e6a4;border-radius:50%;margin-right:7px;box-shadow:0 0 0 5px rgba(102,230,164,.12)}
+    section{padding:82px 0;border-top:1px solid rgba(255,255,255,.065)}.section-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;margin-bottom:42px}.kicker{color:var(--accent);font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800}.section-head h2{font-size:clamp(2rem,4vw,3.6rem);line-height:1.05;letter-spacing:-.045em;margin:10px 0}.section-head p{margin:8px 0 0;color:var(--muted);font-size:1.05rem;max-width:720px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:linear-gradient(180deg,rgba(17,34,57,.9),rgba(10,23,39,.9));border:1px solid var(--line);border-radius:18px;padding:24px;min-height:190px}.card .num{color:#7186a0;font-size:.78rem}.card h3{font-size:1.15rem;margin:34px 0 8px}.card p{color:var(--muted);margin:0;font-size:.94rem}.arrow{font-size:1.2rem;color:var(--accent);margin:0 7px}
+    .thesis{display:grid;grid-template-columns:1fr 1fr;gap:20px}.quote{padding:34px;border-radius:20px;background:linear-gradient(125deg,#10294a,#101a35);border:1px solid #27405f;font-size:clamp(1.35rem,2.6vw,2.2rem);font-weight:750;letter-spacing:-.035em}.copy{padding:12px 8px 12px 20px;color:#c2cede}.copy strong{color:white}.stack{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.tag{border:1px solid var(--line);background:#0a1727;border-radius:999px;padding:8px 12px;color:#c8d3e1;font-size:.88rem}
+    .timeline{display:grid;gap:14px}.role{display:grid;grid-template-columns:210px 1fr;gap:28px;padding:24px;border:1px solid var(--line);border-radius:16px;background:rgba(11,25,43,.66)}.role .org{font-weight:800}.role .meta{color:#7f93ac;font-size:.9rem}.role h3{margin:0 0 7px;font-size:1.15rem}.role p{margin:0;color:var(--muted)}
+    .credentials{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.cred{padding:22px;border-radius:16px;border:1px solid var(--line);background:rgba(13,26,43,.8)}.cred small{color:var(--accent);font-weight:700}.cred h3{margin:8px 0 5px}.cred p{margin:0;color:var(--muted);font-size:.92rem}
+    .cta{padding:64px;border-radius:24px;border:1px solid #2b4a6e;background:radial-gradient(circle at 90% 10%,rgba(110,231,242,.15),transparent 36%),linear-gradient(140deg,#10223c,#0b1728)}.cta h2{font-size:clamp(2.2rem,5vw,4.5rem);line-height:1;margin:0 0 18px;letter-spacing:-.05em}.cta p{max-width:780px;color:#c0ccdb;font-size:1.08rem}.footer{padding:36px 0 50px;color:#71839a;font-size:.9rem}.footer-in{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer a{text-decoration:none;color:#9eb0c5}
+    .reveal{opacity:0;transform:translateY(18px);transition:.65s ease}.reveal.on{opacity:1;transform:none}
+    @media(max-width:900px){.links a:not(.pill){display:none}.hero-grid,.section-head,.thesis{grid-template-columns:1fr}.hero-grid{gap:42px}.portrait{max-width:430px}.grid4{grid-template-columns:1fr 1fr}.credentials{grid-template-columns:1fr}.role{grid-template-columns:1fr}.cta{padding:36px}} @media(max-width:600px){.wrap{width:min(calc(100% - 28px),var(--max))}.hero{padding-top:62px}.grid4{grid-template-columns:1fr}.availability{left:10px}.actions{display:grid}.btn{justify-content:center}.portrait img{border-radius:20px}section{padding:64px 0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary navigation"><div class="wrap navin"><a class="brand" href="#top">Paul <span>DellaGrotte</span></a><div class="links"><a href="#focus">Focus</a><a href="#experience">Experience</a><a href="#credentials">Credentials</a><a class="pill" href="https://www.linkedin.com/in/pauldellagrotte" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></nav>
 
-  <head>
+  <main id="top">
+    <header class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Enterprise Analytics · AI Transformation</div><h1>Transforming analytics for the <span class="grad">AI era.</span></h1><p class="lead">I help organizations connect deep analytics and enterprise-platform experience with the next generation of AI-enabled work — modernizing data, tools, workflows and adoption along the way.</p><div class="actions"><a class="btn primary" href="#focus">Explore transformation focus ↓</a><a class="btn secondary" href="https://www.linkedin.com/in/pauldellagrotte" target="_blank" rel="noopener">Connect on LinkedIn ↗</a></div></div><div class="portrait"><img src="img/profile.jpg" alt="Paul DellaGrotte" width="600" height="650"><div class="availability"><span class="dot"></span>Interested in AI transformation roles & engagements</div></div></div></header>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="Paul DellaGrotte" content="">
+    <section id="focus"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">Transformation focus</div><h2>From established analytics to intelligent operations.</h2></div><p>My background sits at the intersection of enterprise BI, analytics consulting, data platforms and technology enablement. That makes the current shift toward AI a natural extension of the work I’ve been doing for years: modernizing how organizations turn information into action.</p></div><div class="grid4">
+      <article class="card reveal"><div class="num">01</div><h3>Legacy BI <span class="arrow">→</span> Modern platforms</h3><p>Rationalize established reporting estates and create a practical path toward cloud-native, governed analytics.</p></article>
+      <article class="card reveal"><div class="num">02</div><h3>Dashboards <span class="arrow">→</span> AI-enabled insight</h3><p>Move beyond static consumption toward conversational, assistive and increasingly agentic analytics experiences.</p></article>
+      <article class="card reveal"><div class="num">03</div><h3>Manual work <span class="arrow">→</span> Intelligent automation</h3><p>Find repeatable business processes where automation and AI can remove friction while preserving control.</p></article>
+      <article class="card reveal"><div class="num">04</div><h3>AI pilots <span class="arrow">→</span> Enterprise adoption</h3><p>Connect technology decisions to governance, operating models, enablement and the people changes required to scale.</p></article>
+    </div></div></section>
 
-    <title>Paul Della Grotte</title>
+    <section><div class="wrap thesis"><div class="quote reveal">“The opportunity is not simply to add AI. It is to redesign how analytics, platforms and people work together.”</div><div class="copy reveal"><p><strong>Professional perspective.</strong> My career has progressed from finance and business analysis into BI implementation, analytics consulting and enterprise technology. Today, I’m especially interested in roles where that foundation can help organizations navigate AI transformation responsibly and pragmatically.</p><p>I’m most interested in work involving AI enablement, analytics modernization, data-platform strategy, intelligent automation, legacy BI migration and enterprise adoption.</p><div class="stack"><span class="tag">AI Transformation</span><span class="tag">Analytics Modernization</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Snowflake</span><span class="tag">Python</span><span class="tag">Enterprise BI</span><span class="tag">Data Platforms</span></div></div></div></section>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <section id="experience"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">Experience</div><h2>A career built around turning data into better decisions.</h2></div><p>Experience across consulting, analytics, enterprise reporting, finance and platform implementation provides a broad view of transformation: the technology matters, but so do process, governance, adoption and business value.</p></div><div class="timeline">
+      <article class="role reveal"><div><div class="org">Boston Consulting Group (BCG)</div><div class="meta">Current · Boston, MA</div></div><div><h3>Enterprise technology & analytics</h3><p>Continuing a career focused on data, analytics, digital platforms and organizational enablement within a global consulting environment.</p></div></article>
+      <article class="role reveal"><div><div class="org">SEI</div><div class="meta">Senior Consultant · 2019+</div></div><div><h3>Business & technology consulting</h3><p>Supported client needs spanning technology planning and deployment, process optimization, project execution and enterprise information management.</p></div></article>
+      <article class="role reveal"><div><div class="org">Strong-Bridge Envision</div><div class="meta">Senior Consultant · 2016–2019</div></div><div><h3>Analytics consulting</h3><p>Guided clients across analytics initiatives ranging from dashboards and enterprise reporting to more advanced analytical models.</p></div></article>
+      <article class="role reveal"><div><div class="org">Xcel Energy</div><div class="meta">Strategy Analyst · 2015–2017</div></div><div><h3>Analytics for business strategy</h3><p>Produced dashboards, reporting and advanced analysis for business leadership, translating data into recommendations.</p></div></article>
+      <article class="role reveal"><div><div class="org">Exelis</div><div class="meta">Senior Financial / BI Analyst · 2011–2014</div></div><div><h3>Enterprise BI implementation</h3><p>Led a division BI-tool implementation with application administration, classroom training, report development, account management and semantic-layer work.</p></div></article>
+      <article class="role reveal"><div><div class="org">BAE Systems</div><div class="meta">Financial Leadership Development · 2008–2011</div></div><div><h3>Business foundation</h3><p>Built a grounding in FP&A, program accounting, forecasting and operational finance — experience that still informs a value-first approach to technology.</p></div></article>
+    </div></div></section>
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <section><div class="wrap"><div class="section-head reveal"><div><div class="kicker">Selected work</div><h2>Modernization before it was called transformation.</h2></div><p>Several projects across the career arc point to the same pattern: replacing manual or fragmented work with better data architecture, reporting and automation.</p></div><div class="grid4">
+      <article class="card reveal"><div class="num">Enterprise reporting</div><h3>Business Objects implementation</h3><p>Migrated Business Objects capabilities into an enterprise reporting environment, integrating with existing data warehouses and supporting employee training.</p></article>
+      <article class="card reveal"><div class="num">Data platform</div><h3>Cloud analytics pipeline</h3><p>Built a project that staged public data in Amazon S3 for a Snowflake data warehouse — connecting ingestion, cloud storage and analytics.</p></article>
+      <article class="card reveal"><div class="num">Analytics</div><h3>Power BI & Tableau</h3><p>Created analytical experiences in Power BI and Tableau, complementing enterprise experience administering and enabling BI platforms.</p></article>
+      <article class="card reveal"><div class="num">Automation</div><h3>Process improvement</h3><p>Early career projects included replacing manual workflows with automation and creating data-driven tools for forecasting and decision support.</p></article>
+    </div></div></section>
 
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <section id="credentials"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">Credentials</div><h2>Analytics depth with business context.</h2></div><p>Formal training in predictive analytics, enterprise platforms, process improvement and business gives me a multidisciplinary foundation for AI transformation work.</p></div><div class="credentials">
+      <div class="cred reveal"><small>Education</small><h3>Northwestern University</h3><p>Master of Science · Predictive Analytics</p></div>
+      <div class="cred reveal"><small>Education</small><h3>Plymouth State University</h3><p>Bachelor of Science · Finance · Summa Cum Laude</p></div>
+      <div class="cred reveal"><small>Professional</small><h3>Microsoft Power BI</h3><p>Analyzing and Visualizing Data with Power BI</p></div>
+      <div class="cred reveal"><small>Professional</small><h3>Lean Six Sigma Green Belt</h3><p>University of Michigan</p></div>
+      <div class="cred reveal"><small>Platform</small><h3>Snowflake</h3><p>Hands On Snowflake · WebUI Essentials</p></div>
+      <div class="cred reveal"><small>Digital</small><h3>Data & Digital Platforms</h3><p>BCG foundational credential</p></div>
+    </div></div></section>
 
-  </head>
+    <section><div class="wrap"><div class="cta reveal"><div class="kicker">What’s next</div><h2>Interested in building the next operating model for analytics + AI?</h2><p>I’m open to conversations around AI transformation, analytics modernization, enterprise AI enablement and contract or consulting engagements where established data and BI environments need a practical path forward.</p><div class="actions"><a class="btn primary" href="https://www.linkedin.com/in/pauldellagrotte" target="_blank" rel="noopener">Start a conversation on LinkedIn ↗</a><a class="btn secondary" href="https://github.com/pdellagrotte" target="_blank" rel="noopener">View GitHub ↗</a></div></div></div></section>
+  </main>
 
-  <body id="page-top">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Paul Della Grotte</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="dellagrotte_resume.pdf">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto" style="margin-top: 50px">
-          <h1 class="mb-0">Paul
-            <span class="text-primary">Della Grotte</span>
-          </h1>
-          <div class="subheading mb-5"> Melrose, MA 02176 · (978) 566-1329 ·
-            <a href="mailto:paul.dellagrotte@gmail.com<">paul.dellagrotte@gmail.com</a>
-          </div>
-          <p class="lead mb-5">I am a consultant with a passion for <strong>analytics</strong> spending most days demystifying data for organizations or working on <a href="#projects"><strong>side projects</strong></a></p>
-          <div class="social-icons">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pauldellagrotte/">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/pdellagrotte/">
-              <i class="fab fa-github"></i>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC5n66TxiTr_XCosTJ_wx_6Q">
-              <i class="fab fa-youtube-square"></i>
-            </a>
-          </div>
-          <p class="sub" style="margin-top: 50px; font-size: 20px">Upcoming Events</p>
-          <p class="item-name"><a target="_blank" href="https://www.sqlsaturday.com/928/eventhome.aspx"> <del> March 28th, 2020 | Guest Speaker @ PASS SQL Saturday - Boston <del> </a></p>
-          <p class="item-name"><a target="_blank" href="https://www.sqlsaturday.com/813/eventhome.aspx"> <del> March 30th, 2019 | Guest Speaker @ PASS SQL Saturday - Boston </del> </a></p>
-
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-        <div class="my-auto">
-          <h2 class="mb-5">Projects</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-angle-right text-warning"></i>
-              Built a home NAS file server with a Raspberry Pi board running <a href="https://www.openmediavault.org/">Open Media Vault</a></li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-angle-right text-warning"></i>
-              <a href="img/covid-db-conceptual-diagram.jpg">Coronavirus data</a> scraped and staged in S3 bucket for Snowflake DW</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-angle-right text-warning"></i>
-              A <a href="https://app.powerbi.com/view?r=eyJrIjoiYjY0YTkyOWQtN2JjNS00NTdhLTg4MGUtYWZiN2JkYmUzYjc5IiwidCI6ImRkNjk2ZjllLWJlYjEtNGNlYi1hNjk0LTg5ZTIzNTcyM2EyYSIsImMiOjZ9">prediction market dashboard</a> created with Power BI</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-angle-right text-warning"></i>
-              This <a href="https://github.com/pdellagrotte/pdellagrotte.github.io">personal website</a> created with Bootstrap</li>
-            <li>
-              <i class="fa-li fa fa-angle-right text-warning"></i>
-              Tableau analysis of <a href="https://public.tableau.com/profile/paul.dellagrotte#!/vizhome/MassOvertimeAnalysis/PayrollSizebyDepartmentOTofBasePay?publish=yes">Massachusetts State Employee Overtime<a></li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-angle-right text-warning"></i>
-              Program to <a href="https://github.com/pdellagrotte/TweetSemantics">extract and store tweets</a> in SQL db from Twitter API and perform semantic analysis</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-angle-right text-warning"></i>
-              Amazon Alexa <a href="https://github.com/pdellagrotte/abbys-fortune-alexa-skill">Fortune Teller Skill</a> from the perspective of <a href="img/abby.jpg">my dog</a></li>
-            <li>
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Senior Consultant</h3>
-              <div class="subheading mb-3">SEI</div>
-              <p>An employee-owned boutique business and technology consulting firm that supports critical client needs in the areas of project planning and execution, technology planning and deployment, business process optimization and enterprise information management</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2019 - Present</span>
-            </div>
-          </div>
-
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Senior Consultant</h3>
-              <div class="subheading mb-3">Strong-Bridge Envision</div>
-              <p>Partner with wide range of clients varying in size and industry guiding them through analytics projects from dashboards to machine learning models</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2016 - 2019</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Strategy Analyst</h3>
-              <div class="subheading mb-3">Xcel Energy</div>
-              <p>Generate reports, dashboards, and perform advanced statistical analysis with recommendations to Natural Gas line of business leadership</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2015 - 2017</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Senior Analyst</h3>
-              <div class="subheading mb-3">CHI</div>
-              <p>Analyze healthcare IT spending and assist team with data extraction, forecasts, and M&A due diligence</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2014 - 2015</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Senior Financial / BI Analyst</h3>
-              <div class="subheading mb-3">Exelis Inc.</div>
-              <p>Lead division BI Tool implementation and perform duties as application administrator including: on-site classroom training, report development, account maintenance, and semantic layer modifications</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2011 - 2014</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Senior Analyst</h3>
-              <div class="subheading mb-3">BAE System</div>
-              <p>Financial leadership development rotations over three years across multiple geographic locations and departments: FP&A, Program Accounting, and Cash Analysis</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2008 - 2011</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Northwestern University</h3>
-              <div class="subheading mb-3">Masters of Science</div>
-              <div>Predictive Analytics</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2016</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Plymouth State University</h3>
-              <div class="subheading mb-3">Bachelors of Science</div>
-              <p>Finance (Summa Cum Laude)</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2008</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages</div>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <i class="fab fa-python"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-r-project"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Other Tools and Software</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Power BI</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Tableau</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              PyCharm IDE</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Sublime</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              R-Studio</li>
-          </ul>
-          <div class="subheading mb-3" style="margin-top: 15px">Certifications</div>
-
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy"></i>
-              Microsoft Power BI</li>
-            <li>
-              <i class="fa-li fa fa-trophy"></i>
-              Microsoft Excel - Expert Level</li>
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>I enjoy the great outdoors including road biking, snowboarding, and doing some local hiking with my wife and son. I have traveled all over the world including places like Qatar, Japan, China, and India - but still much more to see! A dream of mine is to spend some time living and working overseas. I am also a personal finance geek who loves to discuss investing and different money savings hacks.</p>
-          <p class="mb-0">A lot of my free time is spent tinkering with projects like this <a href="https://retropie.org.uk/"> Raspberry Pi retro game emulator</a></p>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-
-  </body>
-
+  <footer class="footer"><div class="wrap footer-in"><span>© <span id="year"></span> Paul DellaGrotte</span><span>Melrose, Massachusetts · <a href="https://www.linkedin.com/in/pauldellagrotte" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/pdellagrotte" target="_blank" rel="noopener">GitHub</a></span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
+</body>
 </html>
